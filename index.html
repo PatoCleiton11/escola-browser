@@ -1,28 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Escola Browser</title>
- <style>
- /* Estilo da barra */
- .barra {
- background-color: #44266B;
- color: #fff;
- padding: 10px;
- text-align: left;
- }
-
- /* Estilo da logo */
- .logo {
- height: 40px;
- margin-right: 10px;
- vertical-align: middle;
- }
- </style>
+    <title>Escola Browser</title>
+    <style>
+        .barra {
+            background-color: #44266B;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+        .logo {
+            height: 60px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .title {
+            font-size: 3em;
+            font-family: Arial, sans-serif;
+            color: #db90ff;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .subinfo {
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .livros-section {
+            text-align: center;
+            margin: 30px;
+        }
+        .livros-section h2 {
+            font-family: Arial, sans-serif;
+            font-size: 2em;
+            color: #fff;
+            background-color: #444;
+            padding: 10px;
+            display: inline-block;
+        }
+        .livros-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .livro {
+            margin: 20px;
+            text-align: center;
+        }
+        .livro img {
+            width: 300px;
+            height: auto;
+        }
+        .livro button {
+            background-color: #4d276e;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .livro button:hover {
+            background-color: #6f398e;
+        }
+    </style>
 </head>
 <body>
- <div class="barra">
- <img class="logo" src="./images/logo.png" alt="Logo">
- <span>Escola Browser</span>
- </div>
+    <div class="barra">
+        <img class="logo" src="./images/logo.png" alt="Logo">
+        <span>Escola Browser</span>
+    </div>
+
+    <div class="title">Escola Browser</div>
+    <div class="subinfo">Iniciado em 20 de Março de 2023 | Atualizado 8 de Março de 2024</div>
+
+    <div class="livros-section">
+        <h2>Livros</h2>
+        <div class="livros-container">
+            <div class="livro">
+                <img src="https://via.placeholder.com/300x200.png?text=Ciencias+6%C2%BA" alt="Livro de Ciências 6º">
+                <div>Livros de Ciências</div>
+                <button>Procurar</button>
+            </div>
+            <div class="livro">
+                <img src="https://via.placeholder.com/300x200.png?text=Historia+7%C2%BA" alt="Livro de História 7º">
+                <div>Livros de História</div>
+                <button>Procurar</button>
+            </div>
+            <div class="livro">
+                <img src="https://via.placeholder.com/300x200.png?text=Geografia+8%C2%BA" alt="Livro de Geografia 8º">
+                <div>Livros de Geografia</div>
+                <button>Procurar</button>
+            </div>
+            <div class="livro">
+                <img src="https://via.placeholder.com/300x200.png?text=Portugues+9%C2%BA" alt="Livro de Português 9º">
+                <div>Livros de Português</div>
+                <button>Procurar</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
